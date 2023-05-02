@@ -102,14 +102,15 @@ def make_move(slot):
         return solution
 
 def displayS(number):
-    print("------------")
+    print("\n")
+    print("***********")
     tem = str(number)
     tem = [i if i is not '0' else " " for i in tem ]
     board = [tem[0:3], tem[3:6], tem[6:]]
     for row in board:
         row = [str(i) for i in row]
         print (" | ".join(row))
-        print("-----------")
+        print("***********")
 
 from collections import deque
 def find(start):
