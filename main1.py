@@ -145,4 +145,6 @@ def find(start):
     return False
 
 
-print(find(123485760))
+start = input("시작상태를 입력하세요: ")
+start = int(start.replace(" ", ""))
+find(start)
